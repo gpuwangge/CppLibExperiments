@@ -14,5 +14,6 @@ aux_source_directory(${PROJECT_SOURCE_DIR}/src SRC)
 set(LIBRARY_OUTPUT_PATH ${PROJECT_SOURCE_DIR}/../build)
 
 #Generate the shared library from the library sources
-add_library(${PROJECT_NAME} STATIC ${SRC})
+add_library(${PROJECT_NAME} SHARED ${SRC})
+#add_library(${PROJECT_NAME} STATIC ${SRC})
 #add_library(hello::library ALIAS hello_library)
