@@ -35,7 +35,7 @@ link_libraries(model-library)
 ############################################################
 
 # Add an executable with the above sources
-add_executable(hello_binary
+add_executable(testbench_binary
     src/main.cpp
 )
 
