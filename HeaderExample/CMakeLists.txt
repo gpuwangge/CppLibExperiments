@@ -2,6 +2,8 @@
 # To find the cmake version run
 # $ cmake --version
 cmake_minimum_required(VERSION 3.5)
+SET(CMAKE_C_COMPILER "C:/mingw64/bin/gcc.exe")
+SET(CMAKE_CXX_COMPILER "C:/mingw64/bin/g++.exe")
 
 # Set the project name
 project (hello_headers)
