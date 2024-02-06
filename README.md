@@ -15,11 +15,16 @@ Demonstrate c++ struction: cpp and h files
 
 
 ## StaticLibraryExample
-Static Library
+Static Library example
 
 
 ## SharedLibraryExample
-Dynamic Library
+Dynamic Library example
+
+
+## SubdirectoryExample
+Create sub directory from the main directory.  
+The sub directory works as a separate library.  
 
 
 
