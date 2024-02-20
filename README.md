@@ -26,7 +26,9 @@ Dynamic Library example
 Create sub directory from the main directory.  
 The sub directory works as a separate shared library.  
 
-
+## HackLibExample  
+An example that build a shared library that can replace the model-library for SubdirectoryExample.  
+Runing SubdirectoryExample with the hacked lib will print hack information.  
 
 
 
