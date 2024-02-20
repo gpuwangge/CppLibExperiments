@@ -7,6 +7,8 @@ int main(int argc, char *argv[])
 {
     COxilli oxilli;
     oxilli.print();
+    oxilli.funcA();
+    oxilli.funcB();
     std::cout<<"done"<<std::endl;
     return 0;
 }

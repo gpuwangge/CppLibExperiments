@@ -6,6 +6,8 @@ class COxilli
 {
 public:
 	void print();
+	void funcA();
+	void funcB();
 };
 
 #endif
