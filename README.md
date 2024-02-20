@@ -24,7 +24,7 @@ Dynamic Library example
 
 ## SubdirectoryExample
 Create sub directory from the main directory.  
-The sub directory works as a separate library.  
+The sub directory works as a separate shared library.  
 
 
 
