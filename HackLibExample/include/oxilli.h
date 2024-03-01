@@ -8,6 +8,8 @@ public:
 	void print();
 	void funcA();
 	void funcB();
+
+	void funcC();
 };
 
 #endif
