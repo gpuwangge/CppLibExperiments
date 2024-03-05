@@ -46,5 +46,15 @@ oxilli.funcC();
 It doesn't matter hacked lib has extra function (funcC)  
 But hacked lib must implement all original functions (print, funcA, funcB)
 
+### function name
+> nm xxx.dll
+
+will get the list of function names  
+to make the function name clean, use this to include all functions:  
+```
+extern "C"{
+}
+```
+
 
 
