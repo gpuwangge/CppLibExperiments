@@ -56,5 +56,8 @@ extern "C"{
 }
 ```
 
+# MISC
+can use readelf to get information of a binary file  
+https://www.geeksforgeeks.org/readelf-command-in-linux-with-examples/  
 
 
