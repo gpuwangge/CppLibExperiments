@@ -22,6 +22,10 @@ target_include_directories(hello_library
 # Create an executable
 ############################################################
 
+link_directories(
+    ${PROJECT_SOURCE_DIR}/build
+)  
+
 # Method 1 to link library: this function will affect all targets. Must be put before add_executable()
 link_libraries(hello_library)
 
