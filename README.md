@@ -21,6 +21,7 @@ exe需要跟dll放在同一个folder才能运行，否则会出错：
 "The code execution can not proceed because libhello_library.dll was not found. Reinstalling the program may fix this problem."  
 如果把target_link_libraries()去掉，hi.print()这一行会在make的时候报错，错误信息如下：  
 undefined reference to '__imp__ZN5Hello5printEv'  
+collect2.exe: error: ld returned 1 exit status  
 
 ## SharedLibraryExample
 Dynamic Library example
