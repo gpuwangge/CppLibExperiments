@@ -22,13 +22,21 @@ target_include_directories(hello_library
 # Create an executable
 ############################################################
 
+# Method 1 to link library: this function will affect all targets. Must be put before add_executable()
+link_libraries(hello_library)
+
 # Add an executable with the above sources
 add_executable(hello_binary
     src/main.cpp
 )
 
-# link the new hello_library target with the hello_binary target
-target_link_libraries( hello_binary
-    PRIVATE 
-        hello::library
-)
+# Method 2 to link library: this function (target version) will affect the target(hello_binary). Can be put after add_executable()
+#target_link_libraries( hello_binary hello_library)
+
+# Method 3 to link library: use alias hello::library and PRIVATE keyword here
+# target_link_libraries( hello_binary
+#    PRIVATE 
+#        hello::library
+# )
+
+

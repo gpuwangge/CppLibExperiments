@@ -1,4 +1,4 @@
-#include "shared/Hello.h"
+#include "../include/shared/Hello.h"
 
 int main(int argc, char *argv[])
 {
