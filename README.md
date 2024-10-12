@@ -28,7 +28,7 @@ collect2.exe: error: ld returned 1 exit status
 
 结论：如果要使用dynamic library，确保做以下三件事：
 - 确定.dll文件的位置，并把.dll文件拷贝到该位置(否则编译会出错cannot find *lib*。即使编译成功，运行时也会提示找不到.dll)   
-- CMakeLists.txt里，在正确的位置加入link_libraries(dllname)  
+- CMakeLists.txt里，在正确的位置加入link_libraries(dllname), 否则就会在调用dll函数的时候出现undefined reference错误  
 - 在源代码里，需要使用dll里function的部分，需要include headerfile  
 
 
