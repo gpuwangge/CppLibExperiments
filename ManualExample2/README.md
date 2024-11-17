@@ -17,6 +17,6 @@
 
 
 第四步：链接生成binary.exe  
-> g++ -o binary main.c test.a func.a  
+> g++ -o binary main.cpp test.a func.a  
 
 
