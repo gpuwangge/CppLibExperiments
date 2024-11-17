@@ -20,9 +20,10 @@
 第一步：编译生成libTest.so  
 > g++ -fPIC -shared -o libTest.so test.cpp  
 
-(-fPIC: it generates machine code that is not dependent on being located at a specific address in memory. This is particularly useful for creating shared libraries)  
-(Position Independent Code is necessary for shared libraries because the same library code can be loaded at different memory addresses in different programs)  
-(By using -fPIC, the code can be relocated without modification, which improves efficiency and security)  
+-fPIC: it generates machine code that is not dependent on being located at a specific address in memory.   
+This is particularly useful for creating shared libraries  
+Position Independent Code is necessary for shared libraries because the same library code can be loaded at different memory addresses in different programs   
+By using -fPIC, the code can be relocated without modification, which improves efficiency and security  
 
 第二步：链接生成binary  
 > g++ -o binary main.cpp libTest.so
