@@ -27,7 +27,7 @@
 第二步：链接生成binary  
 > g++ -o binary main.cpp libTest.so
 
-运行./binary的时候，即使libTest.so在当前目录下，也会找不到的情况。这是因为当前目录并没有在Linux默认寻找目录下。  
+运行./binary的时候，即使libTest.so在当前目录下，也会出现找不到lib的情况。这是因为当前目录并没有在Linux默认寻找目录下。  
 如果要把当前目录添加到默认lib寻找目录，则要改变LD_LIBRARY_PATH这个环境变量(把当前目录./添加到这个变量中)。  
 > export LD_LIBRARY_PATH=.:$LD_LIBRARY_PATH
 
