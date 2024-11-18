@@ -34,3 +34,12 @@ By using -fPIC, the code can be relocated without modification, which improves e
 
 更改完成后，可以通过env命令检查结果  
 
+# 关于C和CPP的混用
+使用C编译的dinamic library不能被main.cpp链接，会出现underfined reference错误。  
+最好统一语言。如果不行的话，需要在cpp里面用extern "C"把C的头文件括起来。  
+
+extern "C"的作用是指示编译器这部分代码按照C语言编译，而不是C++编译。  
+这里有一个重要区别，C++支持函数重载，所以编译器会将函数参数添加入lib代码中。  
+C不支持函数重载，因此编译的lib只包含函数名字，不包含参数。  
+这是两者链接会失败的根本原因。  
+
